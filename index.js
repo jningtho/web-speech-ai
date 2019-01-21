@@ -1,6 +1,6 @@
 'use strict';
 
-require('dotenv').config()
+require('dotenv').config();
 const APIAI_TOKEN = process.env.APIAI_TOKEN;
 const APIAI_SESSION_ID = process.env.APIAI_SESSION_ID;
 
@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
   res.sendFile('index.html');
 });
 
-io.on('connection', function(socket) {
+io.on('connection', function (socket) {
   socket.on('chat message', (text) => {
     console.log('Message: ' + text);
 

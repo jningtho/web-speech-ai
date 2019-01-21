@@ -1,6 +1,6 @@
 {
-  "name": "Web Speech AI Chatbot Demo",
-  "description": "Simple AI Chat Bot Demo with Web Speech API",
+  "name": "Web Speech AI",
+  "description": "AI Chat Bot",
   "repository": "https://github.com/girliemac/web-speech-ai",
   "keywords": ["ai", "api.ai", "bot", "w3c"],
   "env": {

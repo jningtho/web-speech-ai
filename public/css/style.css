@@ -7,8 +7,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-  font-weight: 300;
-  background: #f7f7f7 url(../images/geometry.png) 0 0 no-repeat;
+  font-weight: 200;
+  /* background: #f7f7f7 url(../images/geometry.png) 0 0 no-repeat; */
   background-size: cover;
   color: #333;
 }
@@ -39,16 +39,28 @@ h2 {
   font-weight: 300;
   margin-top: 0.5em;
 }
+
 section {
+  background-color: #f2eded;
+  margin-right: 2px;
   margin: 1.5em auto;
-  width: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-radius: 10px;
+  border-left-color: #ff8100;
+  border-left-width: 2px;
+  width: 380px;
+  /* height: 500px; */
+  z-index: -99999;
 }
 button {
   display: block;
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 200px;
-  height: 200px;
+  width: 80px;
+  height: 80px;
   border: 0;
   border-radius: 50%;
   padding: .7em 1em;
@@ -57,18 +69,17 @@ button {
   color: #fff;
   background: linear-gradient(180deg, #39C2C9 0%, #3FC8C9 80%, #3FC8C9 100%);
   box-shadow: 2px 5px 30px rgba(63, 200, 201, .4);
-
   will-change: transform, filter;
   transition: all 0.3s ease-out;
 }
-button .fa {
-  font-size: 130px;
-  line-height: 200px;
+button .fas {
+  font-size: 40px;
+  line-height: 70px;
   margin: 0;
   text-shadow: 1px 2px 2px #2a8b90;
 }
 button:hover {
-  transform: scale(.92);
+  transform: scale(.82);
 }
 button:active {
   filter: brightness(.8);
